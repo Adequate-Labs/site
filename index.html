@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Adequate Labs</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="color-scheme" content="light only" />
+<meta name="description" content="Systems consulting" />
+<meta property="og:site_name" content="Adequate Labs" />
+<meta property="og:title" content="Adequate Labs" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Systems consulting" />
+<meta property="og:image" content="logo.jpg" />
+<meta property="og:url" content="https://adequatelabs.com" />
+<meta property="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/jpeg" href="logo.jpg" />
+<link rel="canonical" href="https://adequatelabs.com" />
+<link href="https://fonts.googleapis.com/css2?display=swap&family=Martian+Mono:ital,wght@0,200;1,200" rel="stylesheet" type="text/css" />
+<style>
+/* Reset */
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,img,ul,li,hr,section,header,footer{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+*,*::before,*::after{box-sizing:border-box;}
+ul{list-style:none;}
+
+:root{
+  --background-height:100vh;
+  --viewport-height:100vh;
+}
+
+html{font-size:15pt;}
+body{
+  line-height:1.0;
+  min-height:var(--viewport-height);
+  min-width:320px;
+  overflow-x:hidden;
+  word-wrap:break-word;
+  background-color:#242329;
+}
+
+/* Background fan/line pattern */
+body::before{
+  background-attachment:scroll;
+  content:'';
+  display:block;
+  height:var(--background-height);
+  left:0;
+  pointer-events:none;
+  position:fixed;
+  top:0;
+  transform:scale(1);
+  width:100vw;
+  z-index:0;
+  background-image:url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%22640%22%20height%3D%22480%22%20viewBox%3D%220%200%20640%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20line%20%7B%20stroke%3A%20rgba(255,255,255,0.2)%3B%20stroke-width%3A%201.01px%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cline%20x1%3D%22640.08%22%20y1%3D%22242.0103%22%20x2%3D%22629.9606%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22640.9808%22%20y1%3D%22249.2743%22%20x2%3D%22598.9646%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22642.1139%22%20y1%3D%22258.4121%22%20x2%3D%22567.9685%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22643.5825%22%20y1%3D%22270.2558%22%20x2%3D%22536.9724%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22645.5617%22%20y1%3D%22286.2164%22%20x2%3D%22505.9764%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22648.3735%22%20y1%3D%22308.8922%22%20x2%3D%22474.9803%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22652.6836%22%20y1%3D%22343.65%22%20x2%3D%22443.9843%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22660.124%22%20y1%3D%22403.6525%22%20x2%3D%22412.9882%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22648.2466%22%20y1%3D%22504.4691%22%20x2%3D%22381.9921%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22484.1233%22%20y1%3D%22504.4691%22%20x2%3D%22350.9961%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22320.0%22%20y1%3D%22504.4691%22%20x2%3D%22320.0%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22155.8767%22%20y1%3D%22504.4691%22%20x2%3D%22289.0039%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-8.2466%22%20y1%3D%22504.4691%22%20x2%3D%22258.0079%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-20.124%22%20y1%3D%22403.6525%22%20x2%3D%22227.0118%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-12.6836%22%20y1%3D%22343.65%22%20x2%3D%22196.0157%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-8.3735%22%20y1%3D%22308.8922%22%20x2%3D%22165.0197%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-5.5617%22%20y1%3D%22286.2164%22%20x2%3D%22134.0236%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-3.5825%22%20y1%3D%22270.2558%22%20x2%3D%22103.0276%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-2.1139%22%20y1%3D%22258.4121%22%20x2%3D%2272.0315%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-0.9808%22%20y1%3D%22249.2743%22%20x2%3D%2241.0354%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-0.08%22%20y1%3D%22242.0103%22%20x2%3D%2210.0394%22%20y2%3D%22240.0%22%20%2F%3E%20%3Cline%20x1%3D%22-0.6801%22%20y1%3D%22246.8498%22%20x2%3D%22640.6801%22%20y2%3D%22246.8498%22%20%2F%3E%20%3Cline%20x1%3D%22-1.6678%22%20y1%3D%22254.8144%22%20x2%3D%22641.6678%22%20y2%3D%22254.8144%22%20%2F%3E%20%3Cline%20x1%3D%22-2.9156%22%20y1%3D%22264.8773%22%20x2%3D%22642.9156%22%20y2%3D%22264.8773%22%20%2F%3E%20%3Cline%20x1%3D%22-4.542%22%20y1%3D%22277.9936%22%20x2%3D%22644.542%22%20y2%3D%22277.9936%22%20%2F%3E%20%3Cline%20x1%3D%22-6.7503%22%20y1%3D%22295.8015%22%20x2%3D%22646.7503%22%20y2%3D%22295.8015%22%20%2F%3E%20%3Cline%20x1%3D%22-9.9204%22%20y1%3D%22321.3667%22%20x2%3D%22649.9204%22%20y2%3D%22321.3667%22%20%2F%3E%20%3Cline%20x1%3D%22-14.856%22%20y1%3D%22361.169%22%20x2%3D%22654.856%22%20y2%3D%22361.169%22%20%2F%3E%20%3Cline%20x1%3D%22-23.6008%22%20y1%3D%22431.691%22%20x2%3D%22663.6008%22%20y2%3D%22431.691%22%20%2F%3E%20%3Cline%20x1%3D%220.0%22%20y1%3D%22240.0%22%20x2%3D%22640.0%22%20y2%3D%22240.0%22%20%2F%3E%3C%2Fsvg%3E');
+  background-size:100% 150%;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+a{color:inherit;text-decoration:underline;transition:color 0.25s ease;}
+strong{font-weight:bolder;}
+em{font-style:italic;}
+
+/* Layout wrapper */
+.site-wrapper{
+  -webkit-overflow-scrolling:touch;
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  min-height:var(--viewport-height);
+  overflow:hidden;
+  position:relative;
+  z-index:2;
+  padding:1rem;
+}
+
+/* Outer animated card */
+.site-main{
+  align-items:center;
+  display:flex;
+  flex-grow:0;
+  flex-shrink:0;
+  justify-content:center;
+  max-width:100%;
+  position:relative;
+  text-align:center;
+  z-index:1;
+  background-color:#242329;
+  background-image:url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20path%20%7B%20stroke%3A%20rgba(255,255,255,0.2)%3B%20stroke-width%3A%201.01px%3B%20fill%3A%20none%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20d%3D%22m%200%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%22%20transform%3D%22translate%28-256%20768%29%22%3E%3Canimate%20attributeName%3D%22d%22%20repeatCount%3D%22indefinite%22%20calcMode%3D%22linear%22%20dur%3D%228500ms%22%20values%3D%22m%200%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%3Bm%200%2C0%20l%20238.05%2C-17.95%20l%20273.95%2C17.95%20l%20238.05%2C-17.95%20l%20273.95%2C17.95%20m%20-1041.95%2C-273.95%20l%20273.95%2C17.95%20l%20238.05%2C-17.95%20l%20273.95%2C17.95%20l%20238.05%2C-17.95%20m%20-1006.05%2C-238.05%20l%20238.05%2C-17.95%20l%20273.95%2C17.95%20l%20238.05%2C-17.95%20l%20273.95%2C17.95%20m%20-1041.95%2C-273.95%20l%20273.95%2C17.95%20l%20238.05%2C-17.95%20l%20273.95%2C17.95%20l%20238.05%2C-17.95%20m%20-1006.05%2C-238.05%20l%20238.05%2C-17.95%20l%20273.95%2C17.95%20l%20238.05%2C-17.95%20l%20273.95%2C17.95%20m%20-1024%2C1024%20l%20-17.95%2C-273.95%20l%2017.95%2C-238.05%20l%20-17.95%2C-273.95%20l%2017.95%2C-238.05%20m%20238.05%2C1006.05%20l%2017.95%2C-238.05%20l%20-17.95%2C-273.95%20l%2017.95%2C-238.05%20l%20-17.95%2C-273.95%20m%20273.95%2C1041.95%20l%20-17.95%2C-273.95%20l%2017.95%2C-238.05%20l%20-17.95%2C-273.95%20l%2017.95%2C-238.05%20m%20238.05%2C1006.05%20l%2017.95%2C-238.05%20l%20-17.95%2C-273.95%20l%2017.95%2C-238.05%20l%20-17.95%2C-273.95%20m%20273.95%2C1041.95%20l%20-17.95%2C-273.95%20l%2017.95%2C-238.05%20l%20-17.95%2C-273.95%20l%2017.95%2C-238.05%3Bm%200%2C0%20l%20220.1%2C-35.9%20l%20291.9%2C35.9%20l%20220.1%2C-35.9%20l%20291.9%2C35.9%20m%20-1059.9%2C-291.9%20l%20291.9%2C35.9%20l%20220.1%2C-35.9%20l%20291.9%2C35.9%20l%20220.1%2C-35.9%20m%20-988.1%2C-220.1%20l%20220.1%2C-35.9%20l%20291.9%2C35.9%20l%20220.1%2C-35.9%20l%20291.9%2C35.9%20m%20-1059.9%2C-291.9%20l%20291.9%2C35.9%20l%20220.1%2C-35.9%20l%20291.9%2C35.9%20l%20220.1%2C-35.9%20m%20-988.1%2C-220.1%20l%20220.1%2C-35.9%20l%20291.9%2C35.9%20l%20220.1%2C-35.9%20l%20291.9%2C35.9%20m%20-1024%2C1024%20l%20-35.9%2C-291.9%20l%2035.9%2C-220.1%20l%20-35.9%2C-291.9%20l%2035.9%2C-220.1%20m%20220.1%2C988.1%20l%2035.9%2C-220.1%20l%20-35.9%2C-291.9%20l%2035.9%2C-220.1%20l%20-35.9%2C-291.9%20m%20291.9%2C1059.9%20l%20-35.9%2C-291.9%20l%2035.9%2C-220.1%20l%20-35.9%2C-291.9%20l%2035.9%2C-220.1%20m%20220.1%2C988.1%20l%2035.9%2C-220.1%20l%20-35.9%2C-291.9%20l%2035.9%2C-220.1%20l%20-35.9%2C-291.9%20m%20291.9%2C1059.9%20l%20-35.9%2C-291.9%20l%2035.9%2C-220.1%20l%20-35.9%2C-291.9%20l%2035.9%2C-220.1%3Bm%200%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C-256%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20l%20256%2C0%20m%20-1024%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20m%20256%2C1024%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%20l%200%2C-256%22%3E%3C%2Fanimate%3E%3CanimateTransform%20attributeName%3D%22transform%22%20repeatCount%3D%22indefinite%22%20calcMode%3D%22linear%22%20dur%3D%228500ms%22%20type%3D%22translate%22%20values%3D%22-256%20768%3B-233.74%20790.26%3B-211.48%20812.52%3B-189.22%20834.78%3B-170.67%20853.33%3B-189.22%20834.78%3B-211.48%20812.52%3B-233.74%20790.26%3B-256%20768%3B-278.26%20745.74%3B-300.52%20723.48%3B-322.78%20701.22%3B-341.33%20682.67%3B-322.78%20701.22%3B-300.52%20723.48%3B-278.26%20745.74%3B-256%20768%22%3E%3C%2FanimateTransform%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+  background-size:676px;
+  background-position:center;
+  background-repeat:repeat;
+  border-radius:3rem;
+  border:solid 1px rgba(255,255,255,0.2);
+}
+
+.site-main > .inner{
+  --padding-horizontal:2rem;
+  --padding-vertical:2rem;
+  --spacing:2rem;
+  --width:45rem;
+  border-radius:calc(3rem - 1px);
+  max-width:100%;
+  position:relative;
+  width:var(--width);
+  z-index:1;
+  padding:var(--padding-vertical) var(--padding-horizontal);
+}
+.site-main > .inner > *{margin-top:var(--spacing);margin-bottom:var(--spacing);}
+.site-main > .inner > :first-child{margin-top:0 !important;}
+.site-main > .inner > :last-child{margin-bottom:0 !important;}
+
+/* Inner content panel */
+.container{
+  display:flex;
+  width:100%;
+  align-items:center;
+  justify-content:center;
+  background-color:#28272E;
+  border:solid 1px rgba(255,255,255,0.2);
+  border-radius:2.25rem;
+}
+.container > .inner{
+  --padding:4rem;
+  --spacing:1rem;
+  padding:var(--padding);
+  border-radius:calc(2.25rem - 1px);
+  width:100%;
+}
+.container > .inner > *{margin-top:var(--spacing);margin-bottom:var(--spacing);}
+.container > .inner > :first-child{margin-top:0 !important;}
+.container > .inner > :last-child{margin-bottom:0 !important;}
+
+/* Logo */
+.logo{display:block;line-height:0;position:relative;}
+.logo > .frame{
+  display:inline-block;
+  overflow:hidden;
+  vertical-align:top;
+  width:6.5rem;
+  border-radius:100%;
+  border:1px solid rgba(255,255,255,0.141);
+}
+.logo > .frame > img{
+  border-radius:inherit;
+  max-width:100%;
+  vertical-align:top;
+  width:inherit;
+  padding:0.25rem;
+}
+
+/* Title */
+.title{
+  color:#FFFFFF;
+  font-family:'Martian Mono', monospace;
+  letter-spacing:0.025rem;
+  font-size:2.75em;
+  line-height:1.2;
+  font-weight:200;
+}
+
+/* Subtitle */
+.subtitle{
+  color:rgba(255,255,255,0.612);
+  font-family:'Martian Mono', monospace;
+  font-size:1em;
+  line-height:2;
+  font-weight:200;
+}
+
+/* Button */
+.buttons{
+  cursor:default;
+  display:flex;
+  justify-content:center;
+  gap:0.875rem;
+  flex-direction:row;
+  flex-wrap:wrap;
+  padding:0;
+  margin-top:3rem !important;
+  margin-bottom:3rem !important;
+}
+.buttons > li{max-width:100%;text-align:center;}
+.buttons > li > a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:10.875rem;
+  height:3.625rem;
+  line-height:3.625rem;
+  padding:0 0.5rem;
+  vertical-align:middle;
+  text-align:center;
+  text-decoration:none;
+  white-space:nowrap;
+  font-family:'Martian Mono', monospace;
+  font-size:1em;
+  font-weight:200;
+  border-radius:2.5rem;
+  flex-direction:row-reverse;
+  background-color:#DE8B5D;
+  color:#FFFFFF;
+  background-image:linear-gradient(243deg, #8C51D6 0%, rgba(222,139,93,0.012) 74%);
+  background-position:0% 0%;
+  background-repeat:repeat;
+  background-size:cover;
+  transition:transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+.buttons > li > a > svg{
+  display:block;
+  fill:#FFFFFF;
+  flex-grow:0;
+  flex-shrink:0;
+  height:100%;
+  min-width:16px;
+  pointer-events:none;
+  width:1.25em;
+  margin-left:1rem;
+  margin-right:calc(-0.125em + 0rem);
+  transition:fill 0.25s ease;
+}
+.buttons > li > a > .label{overflow:hidden;}
+.buttons > li > a:hover{
+  background-color:#F29D6D !important;
+  transform:scale(1.0425);
+}
+
+/* Divider */
+.divider{
+  align-items:center;
+  border:0;
+  display:flex;
+  justify-content:center;
+  min-height:1rem;
+  padding:0;
+  position:relative;
+  width:100%;
+  margin-top:3rem !important;
+  margin-bottom:3rem !important;
+}
+.divider::before{content:'';width:100%;background-color:rgba(255,255,255,0.2);height:1px;}
+
+/* Entrance animations */
+@keyframes fade-up{from{opacity:0;transform:translateY(1.25rem);}to{opacity:1;transform:none;}}
+@keyframes fade-in{from{opacity:0;}to{opacity:1;}}
+.logo{animation:fade-up 1s ease both;}
+.title{animation:fade-up 1s ease 0.125s both;}
+.subtitle{animation:fade-in 0.6s ease 0.35s both;}
+.buttons{animation:fade-up 1s ease 0.35s both;}
+@media (prefers-reduced-motion: reduce){
+  .logo,.title,.subtitle,.buttons{animation:none;}
+}
+
+/* Responsive */
+@media (max-width:1680px){html{font-size:11pt;}}
+@media (max-width:1280px){html{font-size:11pt;}}
+@media (max-width:980px){html{font-size:9pt;}}
+@media (max-width:736px){
+  html{font-size:10pt;}
+  .site-wrapper{padding:2rem;}
+  .site-main > .inner{--padding-horizontal:1rem;--padding-vertical:1rem;--spacing:2rem;}
+  .container > .inner{--padding:2.5rem;}
+  .buttons{margin-top:2.25rem !important;margin-bottom:2.25rem !important;}
+  .divider{margin-top:2rem !important;margin-bottom:2rem !important;}
+}
+@media (max-width:480px){
+  .site-wrapper{padding:1rem;}
+  .site-main > .inner{--spacing:1.75rem;}
+}
+@media (max-width:360px){
+  .site-wrapper{padding:0.5rem;}
+  .site-main > .inner{--padding-horizontal:0.75rem;--padding-vertical:0.75rem;--spacing:1.5rem;}
+  .title{font-size:2em;}
+  .container > .inner{--padding:1.875rem;}
+}
+</style>
+</head>
+<body>
+<!-- Envelope icon symbol -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" display="none" width="0" height="0">
+  <symbol id="icon-email" viewBox="0 0 40 40">
+    <path d="M38,13.8v16.8c0,1.4-1.1,2.5-2.5,2.5H4.5c-1.4,0-2.5-1.1-2.5-2.5V13.8h0v-3.4c0-1.4,1.1-2.5,2.5-2.5h31c1.4,0,2.5,1.1,2.5,2.5v3.4h0ZM4.5,30.8h31c0,0,.2,0,.2-.2v-14.6l-15,10.2c-.2.1-.4.2-.7.2s-.5,0-.7-.2L4.4,16v14.6c0,0,0,.2.2.2ZM35.5,10.2H4.5c0,0-.2,0-.2.2v2.7l15.6,10.6,15.6-10.6v-2.7c0,0,0-.2-.2-.2Z" />
+  </symbol>
+</svg>
+
+<div class="site-wrapper">
+  <div class="site-main" role="main">
+    <div class="inner">
+      <div class="container">
+        <div class="inner">
+          <div class="logo">
+            <span class="frame"><img src="logo.jpg" alt="Adequate Labs" /></span>
+          </div>
+          <h1 class="title">Adequate Labs</h1>
+          <p class="subtitle">Systems consulting</p>
+          <ul class="buttons">
+            <li>
+              <a href="mailto:info@adequatelabs.com" role="button">
+                <svg aria-labelledby="email-icon-title"><title id="email-icon-title">Email</title><use href="#icon-email"></use></svg>
+                <span class="label">Build</span>
+              </a>
+            </li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
