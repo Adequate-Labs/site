@@ -183,71 +183,79 @@ em{font-style:italic;}
   margin-bottom:3rem !important;
 }
 .buttons > li{max-width:100%;text-align:center;}
-.buttons > li:first-child{flex:0 0 100%;margin-bottom:0.75rem;}
+.buttons > li.cta{flex:0 0 auto;}
+.buttons > li.break{flex:0 0 100%;height:0.25rem;margin:0;padding:0;}
+
+/* Primary + secondary CTA pair */
 .buttons > li > a{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  width:10.875rem;
-  height:3.625rem;
-  line-height:3.625rem;
-  padding:0 0.5rem;
-  vertical-align:middle;
-  text-align:center;
+  gap:0.5rem;
+  min-width:8.75rem;
+  height:3.125rem;
+  padding:0 1.5rem;
   text-decoration:none;
   white-space:nowrap;
   font-family:'Martian Mono', monospace;
-  font-size:1em;
+  font-size:0.95em;
   font-weight:200;
-  border-radius:2.5rem;
-  flex-direction:row-reverse;
-  background-color:#DE8B5D;
+  letter-spacing:0.02em;
+  border-radius:0.85rem;
   color:#FFFFFF;
-  background-image:linear-gradient(243deg, #8C51D6 0%, rgba(222,139,93,0.012) 74%);
-  background-position:0% 0%;
-  background-repeat:repeat;
-  background-size:cover;
-  transition:transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+  border:1px solid transparent;
+  background-color:transparent;
+  transition:transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 .buttons > li > a > svg{
   display:block;
-  fill:#FFFFFF;
+  fill:currentColor;
   flex-grow:0;
   flex-shrink:0;
-  height:100%;
-  min-width:16px;
+  height:1.15em;
+  width:1.15em;
+  min-width:14px;
   pointer-events:none;
-  width:1.25em;
-  margin-left:1rem;
-  margin-right:calc(-0.125em + 0rem);
-  transition:fill 0.25s ease;
+  transition:fill 0.2s ease;
 }
-.buttons > li > a > .label{overflow:hidden;}
+.buttons > li > a > .label{overflow:visible;line-height:1.4;}
+
+.buttons > li > a.primary{
+  background-color:#DE8B5D;
+  color:#241E1A;
+}
+.buttons > li > a.primary:hover{
+  background-color:#F29D6D;
+  transform:translateY(-2px);
+}
+.buttons > li > a.secondary{
+  background-color:rgba(255,255,255,0.04);
+  border-color:rgba(255,255,255,0.18);
+}
+.buttons > li > a.secondary:hover{
+  background-color:rgba(255,255,255,0.09);
+  border-color:rgba(255,255,255,0.4);
+  transform:translateY(-2px);
+}
+
+/* Social icon buttons */
 .buttons > li > a.icon-only{
+  min-width:0;
   width:2.5rem;
   height:2.5rem;
-  line-height:2.5rem;
   padding:0;
-  flex-direction:row;
+  gap:0;
   border-radius:50%;
   background-color:transparent;
-  background-image:none;
   border:1px solid rgba(255,255,255,0.25);
 }
 .buttons > li > a.icon-only > svg{
-  margin-left:0;
-  margin-right:0;
   width:1.1em;
   height:1.1em;
   fill:rgba(255,255,255,0.7);
 }
-.buttons > li > a:hover{
-  background-color:#F29D6D !important;
-  transform:scale(1.0425);
-}
 .buttons > li > a.icon-only:hover{
-  background-color:transparent !important;
-  background-image:none;
+  background-color:transparent;
   border-color:rgba(255,255,255,0.55);
   transform:scale(1.08);
 }
@@ -342,12 +350,19 @@ em{font-style:italic;}
           <h1 class="title">Adequate Labs</h1>
           <p class="subtitle">Technical Consulting & Design</p>
           <ul class="buttons">
-            <li>
-              <a href="mailto:info@adequatelabs.com" role="button">
+            <li class="cta">
+              <a class="primary" href="mailto:info@adequatelabs.com" role="button">
                 <svg aria-labelledby="email-icon-title"><title id="email-icon-title">Email</title><use href="#icon-email"></use></svg>
-                <span class="label">Build</span>
+                <span class="label">Contact</span>
               </a>
             </li>
+            <li class="cta">
+              <a class="secondary" href="https://theadequatelabs.etsy.com" target="_blank" rel="noopener noreferrer" role="button">
+                <svg aria-labelledby="etsy-icon-title"><title id="etsy-icon-title">Etsy</title><use href="#icon-etsy"></use></svg>
+                <span class="label">Shop</span>
+              </a>
+            </li>
+            <li class="break" aria-hidden="true"></li>
             <li>
               <a class="icon-only" href="https://www.tiktok.com/@adequatelabs" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
                 <svg aria-hidden="true"><use href="#icon-tiktok"></use></svg>
@@ -356,11 +371,6 @@ em{font-style:italic;}
             <li>
               <a class="icon-only" href="https://www.patreon.com/cw/AdequateLabs" target="_blank" rel="noopener noreferrer" aria-label="Patreon">
                 <svg aria-hidden="true"><use href="#icon-patreon"></use></svg>
-              </a>
-            </li>
-            <li>
-              <a class="icon-only" href="https://theadequatelabs.etsy.com" target="_blank" rel="noopener noreferrer" aria-label="Etsy">
-                <svg aria-hidden="true"><use href="#icon-etsy"></use></svg>
               </a>
             </li>
             <li>
